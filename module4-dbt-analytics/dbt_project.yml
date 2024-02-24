@@ -4,7 +4,7 @@
 name: 'ny_taxi_rides'
 version: "1.0.0"
 config-version: 2
-
+  
 # This setting configures which "profile" dbt uses for this project.
 profile: "default"
 
@@ -35,3 +35,6 @@ clean-targets: # directories to be removed by `dbt clean`
 
 models:
   ny_taxi_rides:
+
+vars:
+  payment_type_values: ('1.0','2.0','3.0','4.0','5.0')
