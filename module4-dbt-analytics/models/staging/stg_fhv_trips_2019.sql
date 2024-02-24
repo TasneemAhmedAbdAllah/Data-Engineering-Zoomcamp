@@ -10,10 +10,10 @@ renamed as (
 
     select
         dispatching_base_num,
-        cast(pickup_datetime as DATETIME) as pickup_datetime,
-        cast(dropoff_datetime as DATETIME) as dropoff_datetime,
-        cast(pulocationid as INT64) as pulocationid,
-        cast(dolocationid as INT64) as dolocationid,
+        pickup_datetime,
+        dropoff_datetime,
+        pulocationid,
+        dolocationid,
         sr_flag,
         affiliated_base_number
 
